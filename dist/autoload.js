@@ -5,7 +5,7 @@
 
 // Recommended to use absolute path for live2d_path parameter
 // live2d_path 参数建议使用绝对路径
-const live2d_path = 'https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/';
+const live2d_path = 'https://fastly.jsdelivr.net/gh/Mavewc/live2d-widgets@1.0.0/dist/';
 // const live2d_path = '/dist/';
 
 // Method to encapsulate asynchronous resource loading
@@ -49,7 +49,7 @@ function loadExternalResource(url, type) {
   // Load waifu.css and waifu-tips.js
   // 加载 waifu.css 和 waifu-tips.js
   await Promise.all([
-    loadExternalResource(live2d_path + 'waifu.css', 'css'),
+    loadExternalResource(live2d_ + 'waifu.css', 'css'),
     loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
   ]);
   // For detailed usage of configuration options, see README.en.md
